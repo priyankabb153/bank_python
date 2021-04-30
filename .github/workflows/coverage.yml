@@ -26,5 +26,4 @@ jobs:
     - name: Install coverage 
       run: pip install coverage
     - name: run coverage
-      run: cd bank_python
-           coverage run -m pytest pytest1.py
+      run: coverage run -m pytest bank_python/pytest1.py
