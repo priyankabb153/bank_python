@@ -75,16 +75,16 @@ def fetch_phone_no():
             continue
     return phone_no
     
-def no_of_lines(filename):
-    file = open(filename, "r")
-    counter = 0
-    lines = file.read()
-    count = lines.split("\n")
-    for i in count:
-        if i:
-            counter += 1
-
-    return counter  
+# def no_of_lines(filename):
+#     file = open(filename, "r")
+#     counter = 0
+#     lines = file.read()
+#     count = lines.split("\n")
+#     for i in count:
+#         if i:
+#             counter += 1
+#
+#     return counter
 
 class LinkedList:
     def __init__(self):
@@ -246,8 +246,8 @@ my_list.head = None
 flag = True
 with open("bank_record", "+a") as fp:
     fp.close()
-
-account_number = no_of_lines('bank_record')
+check_file_present.check_file("bank_record")
+account_number = no_of_lines.no_of_lines('bank_record')
 if account_number != 0:
     account_number += 1
 # print(account_number)
