@@ -1,0 +1,7 @@
+- name: Mypy Check
+  # You may pin to the exact commit or the version.
+  # uses: jpetrucciani/mypy-check@52335dab5432fe3b57c5d7527fd39db94c736e92
+  uses: jpetrucciani/mypy-check@0.761
+  with:
+    # File or directory to run mypy on
+    path: bank_python
